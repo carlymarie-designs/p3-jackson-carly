@@ -14,7 +14,7 @@ export class MainFooter extends Footer {
 // object based on child class
 const mainFooter = new MainFooter( 
   'All Rights Reserved.',
-  '&copy 2021 <strong>The Lunch Decider</strong>'   
+  '&copy 2021 <strong>The Lunch Decider</strong>.'   
 );
 
 const footer = `
