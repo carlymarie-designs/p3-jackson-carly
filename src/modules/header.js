@@ -16,7 +16,7 @@ export class MainHeader extends Header {
 const mainHeader = new MainHeader( 
   'The Lunch Decider', 
   'Let us help you figuare out what to eat for lunch today...',
-  'Ratings are based on our personal experience\, click buttons to reveal our choices...'
+  'Ratings are based on our personal experience\, click buttons to reveal our choices...Ratings are on a scale of 5 stars'
 );
 
 const header = `
