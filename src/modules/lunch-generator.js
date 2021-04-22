@@ -29,7 +29,7 @@ const sitDownFood = [
   new ResturauntChoice( "River Side", "898 River Way", "(998) 645-7444", "*****" ),
   new ResturauntChoice( "Silver Slipper", "373 Slider Way", "(989) 894-7889", "***" ),
   new ResturauntChoice( "Bone Foxes", "8987 Golden Road", "(788) 895-7787","**" ),
-  new ResturauntChoice("Real Soul", "4344 Soul Road", "(889) 895-9785", "****"),
+  new ResturauntChoice( "Real Soul", "4344 Soul Road", "(889) 895-9785", "****" ),
 ];
 
 // shuffle array
