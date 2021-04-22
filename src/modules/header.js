@@ -25,6 +25,15 @@ const header = `
     <h2>${mainHeader.pageLogoSrc}</h2>
     <p>${mainHeader.message}</p>
   </header>
+
+  <div class="question">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <button id="fast-food">Fast Food</button>
+        <button id="sit-down">Sit Down Food</button>
+      </div>
+    </div>
+  </div>
 `;
 
 document.body.innerHTML += header;

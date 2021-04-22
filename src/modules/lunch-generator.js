@@ -23,9 +23,7 @@ const fastFood = [
   new ResturauntChoice( 'Whataburger', '434 Space Road', '(889) 895-9785', '****' )
 ];
 
-// log out fastFood
-// console.log(fastFood);
-
+// Store sit down food options
 const sitDownFood = [
   new ResturauntChoice( 'Mom & Pops', '454 Bumby Road', '(884) 645-4845', '****' ),
   new ResturauntChoice( 'River Side', '898 River Way', '(998) 645-7444', '*****' ),
@@ -33,8 +31,6 @@ const sitDownFood = [
   new ResturauntChoice( 'Bone Foxes', '8987 Golden Road', '(788) 895-7787', '**' ),
   new ResturauntChoice( 'Real Soul', '4344 Soul Road', '(889) 895-9785', '****' )
 ];
-
-// console.log(sitDownFood);
 
 // shuffle array
 function shuffle(array) {
@@ -44,22 +40,30 @@ function shuffle(array) {
 shuffle(sitDownFood);
 shuffle(fastFood);
 
-console.log(sitDownFood[0]);
-console.log(fastFood[0]);
+// test array shuffle
+console.log(sitDownFood[0].name);
 
+// store buttons
+const fastBtn = document.querySelector("#fast-food");
+const sitBtn = document.querySelector("#sit-dow");
+const output = document.querySelector('#output');
 
-// const template = `
-//   <div>
-//     <h1>${pepperoniPizza.name}</h1>
-//     <h2>Type: ${pepperoniPizza.type}</h2>
-    
-//     <ul>
-//       <li>${pepperoniPizza.crust}</li>
-//       <li>${pepperoniPizza.cheese}</li>
-//       <li>${pepperoniPizza.sauce}</li>
-//       <li>${pepperoniPizza.topping}</li>
-//     </ul>
-//   </div>
-// `;
+// show fast food result 
+fastBtn.addEventListener("click", function() {
+  output.innerHTML = foodResults;
+});
+  
+const foodResults = `
+  <div class="results">
+    <div class="container">
+      <div class="row justify-content-center align-item-center">
 
-// document.body.innerHTML += template;
+        <div class="col-12 col-md-6">
+          <div id="output">${fastFood[0].name}</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+`;
+
