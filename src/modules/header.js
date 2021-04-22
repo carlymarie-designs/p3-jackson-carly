@@ -14,8 +14,8 @@ export class MainHeader extends Header {
 
 // object based on child class
 const mainHeader = new MainHeader( 
-  'The Lunch Generator', 
-  'What would you like for lunch?',
+  'The Lunch Decider', 
+  'Let us help you figuare out what to eat for lunch today...',
   'Ultricies Ullamcorper Cras Bibendum Purus'
 );
 
