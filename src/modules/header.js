@@ -16,21 +16,29 @@ export class MainHeader extends Header {
 const mainHeader = new MainHeader( 
   'The Lunch Decider', 
   'Let us help you figuare out what to eat for lunch today...',
-  'Ultricies Ullamcorper Cras Bibendum Purus'
+  'Ratings are based on our personal experience\, click buttons to reveal our choices...'
 );
 
 const header = `
-  <header>
-    <h1>${mainHeader.pageTitle}</h1>
-    <h2>${mainHeader.pageLogoSrc}</h2>
-    <p>${mainHeader.message}</p>
+  <header class="mt-5 pt-5 text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-12 col-md-9 content">
+          <h1>${mainHeader.pageTitle}</h1>
+          <h2>${mainHeader.pageLogoSrc}</h2>
+          <p>${mainHeader.message}</p>
+        </div>
+
+      </div>
+    </div>
   </header>
 
-  <div class="question">
+  <div class="question mt-3">
     <div class="container">
       <div class="row justify-content-center align-items-center">
-        <button id="fast-food">Fast Food</button>
-        <button id="sit-down">Sit Down Food</button>
+        <button class="btn btn-primary m-2" id="fast-food">Fast Food</button>
+        <button class="btn btn-secondary m-2" id="sit-down">Sit Down Food</button>
       </div>
     </div>
   </div>

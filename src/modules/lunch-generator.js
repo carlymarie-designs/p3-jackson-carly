@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
 const foodResults = `
-  <div class="results">
+  <div class="results mt-5 text-center">
     <div class="container">
       <div class="row justify-content-center align-item-center">
         <div class="col-12 col-md-6">
